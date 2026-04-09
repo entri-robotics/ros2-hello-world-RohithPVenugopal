@@ -23,8 +23,8 @@ public:
   {
     
     // TODO: Initialize the timer here
-    timer_ = this->create_wall_timer{
-      1000ms, std::bind(&HelloNode::timer_callback, this)};
+    timer_ = this->create_wall_timer(
+      1000ms, std::bind(&HelloNode::timer_callback, this));
     
   }
 
